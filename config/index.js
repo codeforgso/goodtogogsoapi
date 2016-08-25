@@ -22,7 +22,7 @@ module.exports = {
   port: 8123,
   db: {
     //postgis: 'postgres://user:password@server/database'
-    postgis: 'postgres://jason:pass@localhost:5432/GuilfordVoters'
+    postgis: 'postgres://mnllfnxfnrzbsl:EHwU8igrknx82DsTkrnDpfjgnG@localhost:5432/d2s2ufbouiinj1'
   },
   cache: {
     expiresIn: 30 * 1000,
