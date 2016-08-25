@@ -43,7 +43,7 @@ module.exports = {
     postgis: function (conn, sql, reply) {
       pg.connect(conn, function(err, client, done) {
         if (err) {
-          console.log(JSON.stringify(err));
+          console.log(err);
           reply({'error': 'error fetching client from pool', 'error_details': err });
         } else {
           client.query(sql, function(err, result) {
