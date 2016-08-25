@@ -22,7 +22,7 @@ module.exports = {
   port: 8123,
   db: {
     //postgis: 'postgres://user:password@server/database'
-    postgis: 'postgres://mnllfnxfnrzbsl:EHwU8igrknx82DsTkrnDpfjgnG@ec2-54-243-204-129.compute-1.amazonaws.com:5432/d2s2ufbouiinj1'
+    postgis: 'postgres://mnllfnxfnrzbsl:EHwU8igrknx82DsTkrnDpfjgnG@ec2-54-243-204-129.compute-1.amazonaws.com:5432/d2s2ufbouiinj1?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory'
 
   },
   cache: {
