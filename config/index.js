@@ -44,6 +44,7 @@ module.exports = {
       pg.connect(conn, function(err, client, done) {
         if (err) {
           reply({'error': 'error fetching client from pool', 'error_details': err });
+          console.log(JSON.stringify(err));
         } else {
           client.query(sql, function(err, result) {
             done();  // call done to release the connection back to the pool
