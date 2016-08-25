@@ -8,14 +8,14 @@ var Hapi = require('hapi'),
 
 
 // Create a server with a host and port
-var server = new Hapi.Server(+process.env.PORT, '0.0.0.0');
-// server.connection({
-//     host: 'localhost',
-//     port: config.port,
-//   routes: {
-//     cors: true
-//   }
-// });
+var server = new Hapi.Server();
+server.connection({
+    host: '0.0.0.0',
+    port: +process.env.PORT,
+  routes: {
+    cors: true
+  }
+});
 
 // Start the server
 server.register([
